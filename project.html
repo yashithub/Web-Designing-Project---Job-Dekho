@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Dekho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #19416e;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 2rem;
+        }
+
+        section h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            background-color: #2b4c6e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #19416e;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .job-listing {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><u><b>Job Dekho!</b></u></h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"><u>Home</u></a></li>
+                <li><a href="job.html"><u>Jobs</u></a></li>
+                <li><a href="login.html"><u>Sign Up</u></a></li>
+                <li><a href="login.html"><u>Login</u></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Available Jobs near you...</h1>
+        <div class="job-listing">
+            <h2><u>Software Developer</u></h2>
+            <p>Company: TechCorp</p>
+            <p>Location: New Delhi, India</p>
+            <p>Experience: 2+ years</p>
+            <p><a href="#">Apply Now</a></p>
+        </div>
+
+        <div class="job-listing">
+            <h2><u>Web Designer</u></h2>
+            <p>Company: WebX</p>
+            <p>Location: Bengaluru, India</p>
+            <p>Experience: 5+ years</p>
+            <p><a href="#">Apply Now</a></p>
+        </div>
+
+        <div class="job-listing">
+            <h2><u>Data Scientist</u></h2>
+            <p>Company: DataWorks</p>
+            <p>Location: Noida, India</p>
+            <p>Experience: 3+ years</p>
+            <p><a href="#">Apply Now</a></p>
+        </div>
+    </section>
+
+    <section>
+        <h1>Post a Job</h1>
+        <form id="jobForm">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="experience">Experience Required (Years):</label>
+            <input type="text" id="experience" name="experience" required>
+
+            <label for="cmail">Company Email:</label>
+            <input type="email" id="cmail" name="cmail" required>
+
+            <input type="submit" value="Post Job">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Portal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
